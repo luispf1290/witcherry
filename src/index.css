@@ -85,3 +85,13 @@ h1 {
   margin: 15px 0px !important;
   padding: 10px;
 }
+
+.img-card {
+  position: absolute;
+  transform: translate(208px, -38px);
+}
+
+.img-card2 {
+  position: absolute;
+  transform: translate(250px, -21px);
+}
