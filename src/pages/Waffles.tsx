@@ -101,7 +101,7 @@ export const Waffles = () => {
 
         }}
       >
-        <Title title={'Crea tu magica combinación'} />
+        <Title title={'Crea tu magica combinaciónes'} />
         <Paragraph paragraph={'Elige un ingrediente en cada paso, para armar una deliciosa combinación'} color="grayp-p-400" />
       </div>
 
