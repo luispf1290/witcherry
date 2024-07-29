@@ -12,6 +12,8 @@ import {
 import { Menu, StepLine, Title } from "../components";
 import iceCream from "../assets/icons/iceCream-witcherry.svg";
 import topping from "../assets/icons/chocolate-witcherry.svg";
+import napolitano from "../assets/napolitan-witcherry.svg";
+import conejo from "../assets/conejo-witcherry.svg";
 
 const defaultTheme = createTheme();
 
@@ -49,6 +51,7 @@ export const MainTemplate = () => {
             <Title title={"Extras"} />
             <div>
               <Card className="card-item">
+                <img src={napolitano} alt="napolitano" className="img-card" />
                 <Grid container>
                   <Grid item xs={2}>
                     <div
@@ -79,6 +82,7 @@ export const MainTemplate = () => {
                 </Grid>
               </Card>
               <Card className="card-item">
+                <img src={conejo} alt="conejo" className="img-card2" />
                 <Grid container>
                   <Grid item xs={2}>
                     <div
