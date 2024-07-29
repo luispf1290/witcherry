@@ -1,0 +1,45 @@
+.card-header {
+
+}
+
+.card-header > .title {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.card-header > .gray-p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.img-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.container-price {
+    
+    border-radius: 12px;
+    background: #8D2B22;
+    color: #FFFFFF;
+    padding: 0%;
+    height: 32px;
+    text-align: center;
+    width: 25%;
+}
+
+.container-price > p {
+    margin: 5px
+}
+
+.slick-prev, .slick-next {
+    display: none !important;
+}
