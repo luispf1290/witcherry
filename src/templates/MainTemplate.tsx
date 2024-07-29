@@ -51,7 +51,7 @@ export const MainTemplate = () => {
             <Title title={"Extras"} />
             <div>
               <Card className="card-item">
-                <img src={napolitano} alt="napolitano" className="img-card" />
+                <img src={napolitano} alt="napolitano" className="img-card1" />
                 <Grid container>
                   <Grid item xs={2}>
                     <div
