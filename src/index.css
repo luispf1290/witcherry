@@ -86,12 +86,12 @@ h1 {
   padding: 10px;
 }
 
-.img-card {
+.img-card1 {
   position: absolute;
-  transform: translate(208px, -38px);
+  transform: translate(calc(100% - -17px), -38px);
 }
 
 .img-card2 {
   position: absolute;
-  transform: translate(250px, -21px);
+  transform: translate(231px, -21px);
 }
