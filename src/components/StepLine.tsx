@@ -9,6 +9,11 @@ import {
 } from "@mui/lab";
 
 import { Grid, Typography } from "@mui/material";
+import step1 from "../assets/steps/step1.svg";
+import step2 from "../assets/steps/step2.svg";
+import step3 from "../assets/steps/step3.svg";
+import step4 from "../assets/steps/step4.svg";
+import step5 from "../assets/steps/step5.svg";
 import "./stepLine.css";
 
 export const StepLine = () => {
@@ -23,9 +28,8 @@ export const StepLine = () => {
     >
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot>
-            <img src="" alt="number" />
+          <TimelineDot className="dot-color">
+            <img src={step1} alt="number" />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -44,9 +48,8 @@ export const StepLine = () => {
 
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot>
-            <img src="" alt="number" />
+          <TimelineDot className="dot-color">
+            <img src={step2} alt="number" />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -58,7 +61,7 @@ export const StepLine = () => {
             <div>
               <p>Mermeladas</p>
               <Grid container spacing={2}>
-                <Grid item xs={6} sx={{ paddingLeft: "0px !important" }}>
+                <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
                   <ul>
                     <li>Frambuesa</li>
                     <li>Fresa</li>
@@ -67,7 +70,7 @@ export const StepLine = () => {
                     <li>Cereza</li>
                   </ul>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
                   <ul>
                     <li>Mango</li>
                     <li>Frambuesa con Granada</li>
@@ -80,13 +83,13 @@ export const StepLine = () => {
             <div>
               <p>Otros</p>
               <Grid container spacing={2}>
-                <Grid item xs={6} sx={{ paddingLeft: "0px !important" }}>
+                <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
                   <ul>
                     <li>Cajeta</li>
                     <li>Nutella</li>
                   </ul>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
                   <ul>
                     <li>Crema de Cacahuate</li>
                     <li>Queso Crema</li>
@@ -101,9 +104,8 @@ export const StepLine = () => {
 
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot>
-            <img src="" alt="number" />
+          <TimelineDot className="dot-color">
+            <img src={step3} alt="number" />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -113,14 +115,14 @@ export const StepLine = () => {
           </Typography>
           <Typography>
             <Grid container spacing={2}>
-              <Grid item xs={6} sx={{ paddingLeft: "0px !important" }}>
+              <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
                 <ul>
                   <li>Durazno</li>
                   <li>Platano</li>
                   <li>Fresa</li>
                 </ul>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
                 <ul>
                   <li>Frambuesa</li>
                   <li>Zarzamora</li>
@@ -134,9 +136,8 @@ export const StepLine = () => {
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot>
-            <img src="" alt="number" />
+          <TimelineDot className="dot-color">
+            <img src={step4} alt="number" />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -146,7 +147,7 @@ export const StepLine = () => {
           </Typography>
           <Typography>
             <Grid container spacing={2}>
-              <Grid item xs={6} sx={{ paddingLeft: "0px !important" }}>
+              <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
                 <ul>
                   <li>Miel</li>
                   <li>Maple</li>
@@ -154,7 +155,7 @@ export const StepLine = () => {
                   <li>Chocolate</li>
                 </ul>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
                 <ul>
                   <li>Crema Batida</li>
                   <li>Rompope</li>
@@ -168,9 +169,8 @@ export const StepLine = () => {
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot>
-            <img src="" alt="number" />
+          <TimelineDot className="dot-color">
+            <img src={step5} alt="number" />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -180,7 +180,7 @@ export const StepLine = () => {
           </Typography>
           <Typography>
             <Grid container spacing={2}>
-              <Grid item xs={6} sx={{ paddingLeft: "0px !important" }}>
+              <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
                 <ul>
                   <li>Nuez</li>
                   <li>Almendra</li>
@@ -191,7 +191,7 @@ export const StepLine = () => {
                   <li>Granola</li>
                 </ul>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
                 <ul>
                   <li>Granillo Chocolate</li>
                   <li>Gomitas</li>
