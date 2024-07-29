@@ -26,7 +26,7 @@ export const StepLine = () => {
         },
       }}
     >
-      <TimelineItem>
+      <TimelineItem className="card-item">
         <TimelineSeparator>
           <TimelineDot className="dot-color">
             <img src={step1} alt="number" />
@@ -46,7 +46,7 @@ export const StepLine = () => {
         </TimelineContent>
       </TimelineItem>
 
-      <TimelineItem>
+      <TimelineItem className="card-item">
         <TimelineSeparator>
           <TimelineDot className="dot-color">
             <img src={step2} alt="number" />
@@ -102,7 +102,7 @@ export const StepLine = () => {
         </TimelineContent>
       </TimelineItem>
 
-      <TimelineItem>
+      <TimelineItem className="card-item">
         <TimelineSeparator>
           <TimelineDot className="dot-color">
             <img src={step3} alt="number" />
@@ -134,7 +134,8 @@ export const StepLine = () => {
           </Typography>
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem>
+
+      <TimelineItem className="card-item">
         <TimelineSeparator>
           <TimelineDot className="dot-color">
             <img src={step4} alt="number" />
@@ -167,7 +168,8 @@ export const StepLine = () => {
           </Typography>
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem>
+
+      <TimelineItem className="card-item">
         <TimelineSeparator>
           <TimelineDot className="dot-color">
             <img src={step5} alt="number" />
