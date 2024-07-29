@@ -2,12 +2,16 @@ import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { Bebidas, Desayunos, Postres, Promos, Waffles } from "../pages";
 import {
   Box,
+  Card,
   Container,
   createTheme,
   CssBaseline,
+  Grid,
   ThemeProvider,
 } from "@mui/material";
-import { Menu, StepLine } from "../components";
+import { Menu, StepLine, Title } from "../components";
+import iceCream from "../assets/icons/iceCream-witcherry.svg";
+import topping from "../assets/icons/chocolate-witcherry.svg";
 
 const defaultTheme = createTheme();
 
@@ -31,15 +35,80 @@ export const MainTemplate = () => {
       </Box>
 
       {pathname === "/waffles" ? (
-        <div
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "left",
-          }}
-        >
-          <StepLine />
-        </div>
+        <>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "left",
+            }}
+          >
+            <StepLine />
+          </div>
+          <div style={{ padding: "10px", margin: "10px" }}>
+            <Title title={"Extras"} />
+            <div>
+              <Card className="card-item">
+                <Grid container>
+                  <Grid item xs={2}>
+                    <div
+                      style={{
+                        margin: "10px",
+                      }}
+                    >
+                      <img src={iceCream} alt="helado" />
+                    </div>
+                  </Grid>
+                  <Grid item xs={10}>
+                    <h3 className="text-white">Helado</h3>
+                    <div>
+                      <ul className="text-gray">
+                        <li>Chocolate</li>
+                        <li>Vainilla</li>
+                        <li>Vino tinto con frutos rojos</li>
+                        <li>Bombon flameado</li>
+                        <li>Nuez de macadamia</li>
+                      </ul>
+                    </div>
+                    <div className="card-footer">
+                      <div className="container-price">
+                        <p>{`0.00`}</p>
+                      </div>
+                    </div>
+                  </Grid>
+                </Grid>
+              </Card>
+              <Card className="card-item">
+                <Grid container>
+                  <Grid item xs={2}>
+                    <div
+                      style={{
+                        margin: "10px",
+                      }}
+                    >
+                      <img src={topping} alt="topping" />
+                    </div>
+                  </Grid>
+                  <Grid item xs={10}>
+                    <h3 className="text-white">Topping especial</h3>
+                    <div>
+                      <ul className="text-gray">
+                        <li>Conejo Turin</li>
+                        <li>Ferrero</li>
+                        <li>Brownie</li>
+                      </ul>
+                      <div className="card-footer">
+                        <div className="container-price">
+                          <p>{`0.00`}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Grid>
+                </Grid>
+              </Card>
+            </div>
+          </div>
+        </>
       ) : null}
     </ThemeProvider>
   );
