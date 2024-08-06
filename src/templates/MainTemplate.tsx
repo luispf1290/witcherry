@@ -19,6 +19,7 @@ const defaultTheme = createTheme();
 
 export const MainTemplate = () => {
   const { pathname } = useLocation();
+  console.log("pathname", pathname);
   return (
     <ThemeProvider theme={defaultTheme}>
       <Box sx={{ display: "flex" }}>
@@ -31,12 +32,12 @@ export const MainTemplate = () => {
             <Route path="/bebidas" element={<Bebidas />} />
             <Route path="/postres" element={<Postres />} />
             <Route path="/promos" element={<Promos />} />
-            <Route path="/" element={<Navigate to="/Home" />} />
+            <Route path="/" element={<Navigate to="/witcherry/Home" />} />
           </Routes>
         </Container>
       </Box>
 
-      {pathname === "/waffles" ? (
+      {pathname === "/witcherry/waffles" ? (
         <>
           <div
             style={{
