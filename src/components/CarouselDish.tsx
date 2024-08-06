@@ -1,20 +1,14 @@
-
-import Slider from 'react-slick';
-import { ItemCarousel, PropsItems } from './ItemCarousel';
-
-
+import Slider from "react-slick";
+import { ItemCarousel, PropsItems } from "./ItemCarousel";
 
 interface PropsCarousel {
-  arrayItems: PropsItems[]
+  arrayItems: PropsItems[];
 }
 
 export const CarouselDish = ({ arrayItems }: PropsCarousel) => {
-
   const settings = {
     dots: false,
     infinite: true,
-    nextArrow: null,
-    prevArrow: null,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -25,47 +19,39 @@ export const CarouselDish = ({ arrayItems }: PropsCarousel) => {
           slidesToShow: 1,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 380,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
-    <div className='slider-container'>
-
-      <Slider
-        {...settings}
-      >
-
-        {
-          arrayItems.map((item, index) => (
-            <ItemCarousel
+    <div className="slider-container">
+      <Slider {...settings}>
+        {arrayItems.map((item, index) => (
+          <ItemCarousel
             key={index}
-              titulo={item.titulo}
-              subtitulo={item.subtitulo}
-              img={item.img}
-              precio={item.precio}
-            />
-          ))
-        }
-
+            titulo={item.titulo}
+            subtitulo={item.subtitulo}
+            img={item.img}
+            precio={item.precio}
+          />
+        ))}
       </Slider>
     </div>
-
-  )
-}
+  );
+};

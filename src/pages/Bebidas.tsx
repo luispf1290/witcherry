@@ -1,8 +1,3 @@
-
-type Props = {}
-
-export const Bebidas = (props: Props) => {
-  return (
-    <div>bebidas</div>
-  )
-}
+export const Bebidas = () => {
+  return <div>bebidas</div>;
+};

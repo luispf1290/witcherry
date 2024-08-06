@@ -1,7 +1,3 @@
-type Props = {}
-
-export const Promos = (props: Props) => {
-  return (
-    <div>promos</div>
-  )
-}
+export const Promos = () => {
+  return <div>promos</div>;
+};

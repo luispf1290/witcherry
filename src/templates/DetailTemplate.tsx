@@ -1,4 +1,3 @@
-type Props = {};
-export const DetailTemplate = (props: Props) => {
+export const DetailTemplate = () => {
   return <div></div>;
 };
