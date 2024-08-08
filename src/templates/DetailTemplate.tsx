@@ -71,13 +71,15 @@ export const DetailTemplate = () => {
               <ul className="gray-p list-detail">
                 {ingredientes.map((ingrediente, index) => (
                   <li style={{ display: "flex" }} key={index}>
-                    <div style={{ paddingRight: "5px", paddingLeft: "5px" }}>
-                      {ingrediente}
-                    </div>
+                    <div>{ingrediente}</div>
                     <Divider
                       orientation="vertical"
                       flexItem
-                      sx={{ background: "#CACACA" }}
+                      sx={{
+                        background: "#CACACA",
+                        marginRight: "5px",
+                        marginLeft: "5px",
+                      }}
                     />
                   </li>
                 ))}
@@ -88,13 +90,15 @@ export const DetailTemplate = () => {
               <ul className="small-gray-100 list-detail">
                 {recomendaciones.map((recomendacion, index) => (
                   <li style={{ display: "flex" }} key={index}>
-                    <div style={{ paddingRight: "5px", paddingLeft: "5px" }}>
-                      {recomendacion}
-                    </div>
+                    <div>{recomendacion}</div>
                     <Divider
                       orientation="vertical"
                       flexItem
-                      sx={{ background: "#CACACA" }}
+                      sx={{
+                        background: "#CACACA",
+                        marginRight: "5px",
+                        marginLeft: "5px",
+                      }}
                     />
                   </li>
                 ))}
