@@ -76,7 +76,7 @@ export const MainTemplate = () => {
                     </div>
                     <div className="card-footer">
                       <div className="container-price">
-                        <p>{`0.00`}</p>
+                        <p>{`$0.00`}</p>
                       </div>
                     </div>
                   </Grid>
@@ -104,7 +104,7 @@ export const MainTemplate = () => {
                       </ul>
                       <div className="card-footer">
                         <div className="container-price">
-                          <p>{`0.00`}</p>
+                          <p>{`$0.00`}</p>
                         </div>
                       </div>
                     </div>
