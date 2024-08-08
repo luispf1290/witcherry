@@ -22,10 +22,10 @@ export const MainTemplate = () => {
   console.log("pathname", pathname);
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Box sx={{ display: "flex" }}>
+      <Box maxWidth="sm" sx={{ display: "flex" }}>
         <CssBaseline />
         <Menu />
-        <Container maxWidth="sm" sx={{ mt: 4, mb: 4 }}>
+        <Container sx={{ mt: 4, mb: 4, width: "80%" }}>
           <Routes>
             <Route path="/waffles" element={<Waffles />} />
             <Route path="/desayunos" element={<Desayunos />} />
@@ -76,7 +76,10 @@ export const MainTemplate = () => {
                     </div>
                     <div className="card-footer">
                       <div className="container-price">
-                        <p>{`$0.00`}</p>
+                        <p>
+                          <sup className="sub-text">$</sup>0.
+                          <sup className="sub-text">00</sup>
+                        </p>
                       </div>
                     </div>
                   </Grid>
@@ -104,7 +107,10 @@ export const MainTemplate = () => {
                       </ul>
                       <div className="card-footer">
                         <div className="container-price">
-                          <p>{`$0.00`}</p>
+                          <p>
+                            <sup className="sub-text">$</sup>0.
+                            <sup className="sub-text">00</sup>
+                          </p>
                         </div>
                       </div>
                     </div>
