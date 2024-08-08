@@ -21,6 +21,16 @@ body {
   min-height: 100vh;
   background: var(--Background, linear-gradient(180deg, #141414 0%, #252525 41.93%, #141414 100%));
   color: var(--Base, #ECECEC) !important;
+  font-family: "Roboto";
+}
+
+.title-big {
+  color: var(--Base, #ECECEC);
+  font-family: Roboto;
+  font-size: 33.661px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .title {
@@ -38,6 +48,26 @@ body {
   line-height: normal;
 }
 
+.title-red {
+  color: #B82D34;
+  font-family: Roboto;
+  font-size: 15.29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.682px;
+}
+
+.subtitle-red {
+  color: #B82D34;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5.52px;
+}
+
 .text-white {
   color: #FFF;
   font-size: 17.838px;
@@ -51,9 +81,15 @@ body {
   font-size: 15.29px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: capitalize;
 }
+
+.list-solid {
+  list-style-type: disc;
+  /* padding-left: 20px; */
+  padding-top: 10px;
+}
+
 
 .gray-p {
   color: var(--base-200, #CACACA);
@@ -66,10 +102,28 @@ body {
 
 .grayp-p-400 {
   color: var(--base-200, #CACACA);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 15.29px;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
+}
+
+.small-gray {
+  color: #CACACA;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.small-gray-100 {
+  color: #CACACA;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 100;
   line-height: normal;
 }
 
