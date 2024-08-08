@@ -5,24 +5,28 @@ import waffles from "../assets/waffles-witcherry.svg";
 
 const itemCarousel1: PropsItems[] = [
   {
+    idPlatillo: 1,
     titulo: "Caramelonions",
     subtitulo: "Especias",
     precio: "0.00",
     img: waffles,
   },
   {
+    idPlatillo: 2,
     titulo: "Sangre de Bufalo",
     subtitulo: "Tiras de pollo",
     precio: "0.00",
     img: waffles,
   },
   {
+    idPlatillo: 3,
     titulo: "Wafsandwich",
     subtitulo: "Jamon y queso",
     precio: "0.00",
     img: waffles,
   },
   {
+    idPlatillo: 4,
     titulo: "Waffle Pizza",
     subtitulo: "Peperoni",
     precio: "0.00",
@@ -32,24 +36,28 @@ const itemCarousel1: PropsItems[] = [
 
 const itemCarousel2: PropsItems[] = [
   {
+    idPlatillo: 5,
     titulo: "Chocobanana",
     subtitulo: "Nutella y Platano",
     precio: "0.00",
     img: waffles,
   },
   {
+    idPlatillo: 6,
     titulo: "Bosque Rojo",
     subtitulo: "Frutos Rojos",
     precio: "0.00",
     img: waffles,
   },
   {
+    idPlatillo: 7,
     titulo: "Tentacion de Eva",
     subtitulo: "Manzana",
     precio: "0.00",
     img: waffles,
   },
   {
+    idPlatillo: 8,
     titulo: "Sombre Lunar",
     subtitulo: "Cocolate",
     precio: "0.00",
