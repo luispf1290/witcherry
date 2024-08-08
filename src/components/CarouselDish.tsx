@@ -39,12 +39,14 @@ export const CarouselDish = ({ arrayItems }: PropsCarousel) => {
       },
     ],
   };
+
   return (
     <div className="slider-container">
       <Slider {...settings}>
         {arrayItems.map((item, index) => (
           <ItemCarousel
             key={index}
+            idPlatillo={index + 1}
             titulo={item.titulo}
             subtitulo={item.subtitulo}
             img={item.img}
