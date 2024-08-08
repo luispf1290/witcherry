@@ -78,7 +78,7 @@ export const Waffles = () => {
         sx={{
           padding: 0,
           margin: 0,
-          width: "80%",
+          width: "100%",
         }}
       >
         <CarouselDish arrayItems={itemCarousel1} />
@@ -92,7 +92,7 @@ export const Waffles = () => {
         sx={{
           padding: 0,
           margin: 0,
-          width: "80%",
+          width: "100%",
         }}
       >
         <CarouselDish arrayItems={itemCarousel2} />
@@ -101,7 +101,7 @@ export const Waffles = () => {
       <div
         style={{
           marginTop: "30px",
-          width: "80%",
+          width: "100%",
         }}
       >
         <Title title={"Crea tu magica combinaciónes"} />
