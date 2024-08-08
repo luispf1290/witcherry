@@ -17,7 +17,8 @@ export const CarouselDish = ({ arrayItems }: PropsCarousel) => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
+          centerPadding: "1px",
           infinite: true,
           dots: true,
         },
@@ -27,14 +28,16 @@ export const CarouselDish = ({ arrayItems }: PropsCarousel) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2,
+          initialSlide: 1,
+          adaptiveHeight: true,
         },
       },
       {
-        breakpoint: 380,
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          adaptiveHeight: true,
         },
       },
     ],
