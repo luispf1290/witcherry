@@ -1,4 +1,6 @@
-interface propsDish {
+import dish  from  '../assets/waffles-witcherry.svg'
+
+export interface propsDish {
     id: number,
     name: string,
     tipo:string,
@@ -12,32 +14,32 @@ export const dishElements: propsDish[] = [
     {
         id:1,
         name: 'Chocobanana',
-        tipo: 'dulce',
-        img:'',
-        ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
+        tipo: 'Dulce',
+        img:dish,
+        ingredientes: ['Platano', 'Fresas', 'Moras Azules', 'Miel'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
     {
         id:2,
         name: 'Bosque Rojo',
-        tipo: 'dulce',
-        img:'',
+        tipo: 'Dulce',
+        img:dish,
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
     {
         id:3,
         name: 'Tentacion de Eva',
-        tipo: 'dulce',
-        img:'',
+        tipo: 'Dulce',
+        img:dish,
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
     {
         id:4,
         name: 'Brownie',
-        tipo: 'dulce',
-        img:'',
+        tipo: 'Dulce',
+        img:dish,
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
@@ -45,7 +47,7 @@ export const dishElements: propsDish[] = [
         id:5,
         name: 'Caramelonions',
         tipo: 'dulce',
-        img:'',
+        img:dish,
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
@@ -53,7 +55,7 @@ export const dishElements: propsDish[] = [
         id:6,
         name: 'Sangre de Bufalo',
         tipo: 'dulce',
-        img:'',
+        img:dish,
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
@@ -61,7 +63,7 @@ export const dishElements: propsDish[] = [
         id:7,
         name: 'Wafsandwish',
         tipo: 'dulce',
-        img:'',
+        img:dish,
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
@@ -69,7 +71,7 @@ export const dishElements: propsDish[] = [
         id:8,
         name: 'WaflePizza',
         tipo: 'dulce',
-        img:'',
+        img:dish,
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
