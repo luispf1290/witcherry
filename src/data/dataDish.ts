@@ -5,6 +5,7 @@ export interface propsDish {
     name: string,
     tipo:string,
     img:string,
+    precio:string
     ingredientes: string[], 
     recomendaciones:string[]
 }
@@ -16,6 +17,7 @@ export const dishElements: propsDish[] = [
         name: 'Caramelonions',
         tipo: 'dulce',
         img:dish,
+        precio:'45.99',
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
@@ -24,6 +26,7 @@ export const dishElements: propsDish[] = [
         name: 'Sangre de Bufalo',
         tipo: 'dulce',
         img:dish,
+        precio:'0.00',
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
@@ -32,6 +35,7 @@ export const dishElements: propsDish[] = [
         name: 'Wafsandwish',
         tipo: 'dulce',
         img:dish,
+        precio:'0.00',
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
@@ -40,6 +44,7 @@ export const dishElements: propsDish[] = [
         name: 'WaflePizza',
         tipo: 'dulce',
         img:dish,
+        precio:'0.00',
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
@@ -48,6 +53,7 @@ export const dishElements: propsDish[] = [
         name: 'Chocobanana',
         tipo: 'Dulce',
         img:dish,
+        precio:'0.00',
         ingredientes: ['Platano', 'Fresas', 'Moras Azules', 'Miel'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
@@ -56,6 +62,7 @@ export const dishElements: propsDish[] = [
         name: 'Bosque Rojo',
         tipo: 'Dulce',
         img:dish,
+        precio:'0.00',
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
@@ -64,6 +71,7 @@ export const dishElements: propsDish[] = [
         name: 'Tentacion de Eva',
         tipo: 'Dulce',
         img:dish,
+        precio:'0.00',
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
@@ -72,6 +80,7 @@ export const dishElements: propsDish[] = [
         name: 'Brownie',
         tipo: 'Dulce',
         img:dish,
+        precio:'0.00',
         ingredientes: ['Platano', 'Fresas', 'Moras Azules'],
         recomendaciones: ['Cafe', 'Malteada', 'frape']
     },
