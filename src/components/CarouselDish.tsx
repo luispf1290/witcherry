@@ -46,7 +46,7 @@ export const CarouselDish = ({ arrayItems }: PropsCarousel) => {
         {arrayItems.map((item, index) => (
           <ItemCarousel
             key={index}
-            idPlatillo={index + 1}
+            idPlatillo={item.idPlatillo}
             titulo={item.titulo}
             subtitulo={item.subtitulo}
             img={item.img}
