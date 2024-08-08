@@ -38,7 +38,7 @@ export const StepLine = () => {
             Elige la base de tu waffle:
           </Typography>
           <Typography>
-            <ul className="flex-list">
+            <ul className="flex-list text-gray list-solid">
               <li>Vainilla</li>
               <li>Chocolate</li>
             </ul>
@@ -62,7 +62,7 @@ export const StepLine = () => {
               <p>Mermeladas</p>
               <Grid container spacing={2}>
                 <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
-                  <ul>
+                  <ul className="text-gray list-solid">
                     <li>Frambuesa</li>
                     <li>Fresa</li>
                     <li>Zarzamora</li>
@@ -71,7 +71,7 @@ export const StepLine = () => {
                   </ul>
                 </Grid>
                 <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
-                  <ul>
+                  <ul className="text-gray list-solid">
                     <li>Mango</li>
                     <li>Frambuesa con Granada</li>
                     <li>Arando con Moras</li>
@@ -84,20 +84,22 @@ export const StepLine = () => {
               <p>Otros</p>
               <Grid container spacing={2}>
                 <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
-                  <ul>
+                  <ul className="text-gray list-solid">
                     <li>Cajeta</li>
                     <li>Nutella</li>
                   </ul>
                 </Grid>
                 <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
-                  <ul>
+                  <ul className="text-gray list-solid">
                     <li>Crema de Cacahuate</li>
                     <li>Queso Crema</li>
                   </ul>
                 </Grid>
               </Grid>
             </div>
-            <p>Pregunta por las mermeladas de temporada</p>
+            <p className="small-gray">
+              Pregunta por las mermeladas de temporada
+            </p>
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -116,21 +118,21 @@ export const StepLine = () => {
           <Typography>
             <Grid container spacing={2}>
               <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
-                <ul>
+                <ul className="text-gray list-solid">
                   <li>Durazno</li>
                   <li>Platano</li>
                   <li>Fresa</li>
                 </ul>
               </Grid>
               <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
-                <ul>
+                <ul className="text-gray list-solid">
                   <li>Frambuesa</li>
                   <li>Zarzamora</li>
                   <li>Mora Azul</li>
                 </ul>
               </Grid>
             </Grid>
-            Pregunta por la fruta de temporada
+            <p className="small-gray">Pregunta por la fruta de temporada</p>
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -149,7 +151,7 @@ export const StepLine = () => {
           <Typography>
             <Grid container spacing={2}>
               <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
-                <ul>
+                <ul className="text-gray list-solid">
                   <li>Miel</li>
                   <li>Maple</li>
                   <li>Lechera</li>
@@ -157,7 +159,7 @@ export const StepLine = () => {
                 </ul>
               </Grid>
               <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
-                <ul>
+                <ul className="text-gray list-solid">
                   <li>Crema Batida</li>
                   <li>Rompope</li>
                   <li>Baileys</li>
@@ -183,7 +185,7 @@ export const StepLine = () => {
           <Typography>
             <Grid container spacing={2}>
               <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
-                <ul>
+                <ul className="text-gray list-solid">
                   <li>Nuez</li>
                   <li>Almendra</li>
                   <li>Cacahuate</li>
@@ -194,7 +196,7 @@ export const StepLine = () => {
                 </ul>
               </Grid>
               <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
-                <ul>
+                <ul className="text-gray list-solid">
                   <li>Granillo Chocolate</li>
                   <li>Gomitas</li>
                   <li>Malvaviscos</li>
