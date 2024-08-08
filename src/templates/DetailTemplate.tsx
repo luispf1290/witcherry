@@ -7,18 +7,27 @@ import {
   ThemeProvider,
   Toolbar,
 } from "@mui/material";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { dishElements, propsDish } from "../data/dataDish";
 import { Title } from "../components";
 import arrow from "../assets/icons/arrow-witcherry.svg";
 import "./templates.css";
+import { splicePrecio } from "../utils/splicePrecio";
 
 const defaultTheme = createTheme();
 export const DetailTemplate = () => {
+  let precioSplit: string[] = [];
   const { id } = useParams();
+  const navigate = useNavigate();
 
-  const { name, tipo, ingredientes, img, recomendaciones }: propsDish =
+  const { name, tipo, ingredientes, img, recomendaciones, precio }: propsDish =
     dishElements.find((platillo) => platillo.id == parseInt(id!))!;
+
+  precioSplit = splicePrecio(precio);
+
+  const handleClickArrow = () => {
+    navigate("/witcherry/waffles", { replace: true });
+  };
 
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -30,6 +39,7 @@ export const DetailTemplate = () => {
               edge="start"
               aria-label="menu"
               sx={{ mr: 2 }}
+              onClick={handleClickArrow}
             >
               <img src={arrow} alt="arrow" />
             </IconButton>
@@ -59,8 +69,8 @@ export const DetailTemplate = () => {
 
             <div>
               <ul className="gray-p list-detail">
-                {ingredientes.map((ingrediente) => (
-                  <li style={{ display: "flex" }}>
+                {ingredientes.map((ingrediente, index) => (
+                  <li style={{ display: "flex" }} key={index}>
                     <div style={{ paddingRight: "5px", paddingLeft: "5px" }}>
                       {ingrediente}
                     </div>
@@ -76,8 +86,8 @@ export const DetailTemplate = () => {
             <div style={{ marginTop: "35px" }}>
               <p className="small-gray-100">Recomendación</p>
               <ul className="small-gray-100 list-detail">
-                {recomendaciones.map((recomendacion) => (
-                  <li style={{ display: "flex" }}>
+                {recomendaciones.map((recomendacion, index) => (
+                  <li style={{ display: "flex" }} key={index}>
                     <div style={{ paddingRight: "5px", paddingLeft: "5px" }}>
                       {recomendacion}
                     </div>
@@ -89,6 +99,18 @@ export const DetailTemplate = () => {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+          <div
+            className="card-footer"
+            style={{ marginTop: "30px", marginBottom: "20px" }}
+          >
+            <div className="container-price">
+              <p>
+                <sup className="sub-text">$</sup>
+                {precioSplit[0]}.
+                <sup className="sub-text">{precioSplit[1]}</sup>
+              </p>
             </div>
           </div>
         </div>
