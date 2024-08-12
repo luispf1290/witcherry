@@ -1,3 +1,9 @@
+import { Fade } from "react-awesome-reveal";
+
 export const Promos = () => {
-  return <div>promos</div>;
+  return (
+    <>
+      <Fade>Promos</Fade>
+    </>
+  );
 };

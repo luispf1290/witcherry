@@ -1,3 +1,9 @@
+import { Fade } from "react-awesome-reveal";
+
 export const Bebidas = () => {
-  return <div>bebidas</div>;
+  return (
+    <>
+      <Fade>bebidas</Fade>
+    </>
+  );
 };

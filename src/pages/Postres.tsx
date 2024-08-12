@@ -1,3 +1,9 @@
+import { Fade } from "react-awesome-reveal";
+
 export const Postres = () => {
-  return <div>postres</div>;
+  return (
+    <>
+      <Fade>Postres</Fade>
+    </>
+  );
 };

@@ -2,6 +2,7 @@ import { Container } from "@mui/material";
 import { CarouselDish, Paragraph, Subtitle, Title } from "../components";
 import { PropsItems } from "../components/ItemCarousel";
 import waffles from "../assets/waffles-witcherry.svg";
+import { Fade } from "react-awesome-reveal";
 
 const itemCarousel1: PropsItems[] = [
   {
@@ -68,50 +69,55 @@ const itemCarousel2: PropsItems[] = [
 export const Waffles = () => {
   return (
     <>
-      <div>
-        <Title title={"Especialidades"} />
-        <Paragraph paragraph={"Nuestras Recomendaciones"} color="grayp-p-400" />
-        <Subtitle subtitle={"Cristales de mar"} />
-      </div>
+      <Fade>
+        <div>
+          <Title title={"Especialidades"} />
+          <Paragraph
+            paragraph={"Nuestras Recomendaciones"}
+            color="grayp-p-400"
+          />
+          <Subtitle subtitle={"Cristales de mar"} />
+        </div>
 
-      <Container
-        sx={{
-          padding: 0,
-          margin: 0,
-          width: "100%",
-        }}
-      >
-        <CarouselDish arrayItems={itemCarousel1} />
-      </Container>
+        <Container
+          sx={{
+            padding: 0,
+            margin: 0,
+            width: "100%",
+          }}
+        >
+          <CarouselDish arrayItems={itemCarousel1} />
+        </Container>
 
-      <div>
-        <Subtitle subtitle={"Dulces Encantados"} />
-      </div>
+        <div>
+          <Subtitle subtitle={"Dulces Encantados"} />
+        </div>
 
-      <Container
-        sx={{
-          padding: 0,
-          margin: 0,
-          width: "100%",
-        }}
-      >
-        <CarouselDish arrayItems={itemCarousel2} />
-      </Container>
+        <Container
+          sx={{
+            padding: 0,
+            margin: 0,
+            width: "100%",
+          }}
+        >
+          <CarouselDish arrayItems={itemCarousel2} />
+        </Container>
 
-      <div
-        style={{
-          marginTop: "30px",
-          width: "100%",
-        }}
-      >
-        <Title title={"Crea tu magica combinaciónes"} />
-        <Paragraph
-          paragraph={
-            "Elige un ingrediente en cada paso, para armar una deliciosa combinación"
-          }
-          color="grayp-p-400"
-        />
-      </div>
+        <div
+          style={{
+            marginTop: "30px",
+            width: "100%",
+          }}
+        >
+          <Title title={"Crea tu magica combinaciónes"} />
+          <Paragraph
+            paragraph={
+              "Elige un ingrediente en cada paso, para armar una deliciosa combinación"
+            }
+            color="grayp-p-400"
+          />
+        </div>
+      </Fade>
     </>
   );
 };
