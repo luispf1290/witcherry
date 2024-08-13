@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import logo from "../assets/logo-witcherry.svg";
 import arrow from "../assets/chevron.svg";
 import bebidas from "../assets/menu/bebidas-witcherry.svg";
@@ -11,18 +11,34 @@ import { NavLink } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";
 
 export const Menu = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
+  const refNav = useRef<HTMLElement>(null);
 
-  const handleClickActive = () => {
-    setToggle(!toggle);
-  };
+  // const handleClickActive = () => {
+  //   setToggle(!toggle);
+  // };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const nav = refNav.current!;
+      const { y } = nav.getBoundingClientRect();
+      y < 0 ? setToggle(!toggle) : setToggle(toggle);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [toggle]);
+
   return (
     <>
-      <header className="header">
+      <header className="header" ref={refNav}>
         <Slide>
           <button
             className={`button-nav ${!toggle ? "btn-active-border" : ""}`}
-            onClick={handleClickActive}
+            // onClick={handleClickActive}
           >
             <div className="cont-buton">
               <img src={logo} className="logo" />
