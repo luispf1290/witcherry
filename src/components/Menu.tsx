@@ -12,7 +12,7 @@ import { Slide } from "react-awesome-reveal";
 
 export const Menu = () => {
   const [toggle, setToggle] = useState<boolean>(true);
-  const refNav = useRef<HTMLElement>(null);
+  const refNav = useRef<HTMLDivElement>(null);
 
   // const handleClickActive = () => {
   //   setToggle(!toggle);
@@ -22,7 +22,9 @@ export const Menu = () => {
     const handleScroll = () => {
       const nav = refNav.current!;
       const { y } = nav.getBoundingClientRect();
-      y < 0 ? setToggle(!toggle) : setToggle(toggle);
+      y === 0 ? setToggle(true) : setToggle(false);
+
+      console.log({ y });
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -36,49 +38,51 @@ export const Menu = () => {
     <>
       <header className="header" ref={refNav}>
         <Slide>
-          <button
-            className={`button-nav ${!toggle ? "btn-active-border" : ""}`}
-            // onClick={handleClickActive}
-          >
-            <div className="cont-buton">
-              <img src={logo} className="logo" />
-              <img
-                src={arrow}
-                alt="arrow"
-                style={{ marginTop: "10px" }}
-                className={`arrow ${toggle ? "activo" : ""}`}
-              />
-            </div>
-          </button>
-          <nav className={`nav ${toggle ? "current" : ""}`}>
-            <ul className="list-items">
-              <NavLink to={"/witcherry/waffles"}>
-                <li className="items">
-                  <img src={waffles} alt="waffles" />
-                </li>
-              </NavLink>
-              <NavLink to={"/witcherry/desayunos"}>
-                <li className="items">
-                  <img src={desayuno} alt="desayuno" />
-                </li>
-              </NavLink>
-              <NavLink to={"/witcherry/bebidas"}>
-                <li className="items">
-                  <img src={bebidas} alt="bebidas" />
-                </li>
-              </NavLink>
-              <NavLink to={"/witcherry/postres"}>
-                <li className="items">
-                  <img src={postres} alt="postres" />
-                </li>
-              </NavLink>
-              <NavLink to={"/witcherry/promos"}>
-                <li className="items">
-                  <img src={promos} alt="promos" />
-                </li>
-              </NavLink>
-            </ul>
-          </nav>
+          <div>
+            <button
+              className={`button-nav ${!toggle ? "btn-active-border" : ""}`}
+              // onClick={handleClickActive}
+            >
+              <div className="cont-buton">
+                <img src={logo} className="logo" />
+                <img
+                  src={arrow}
+                  alt="arrow"
+                  style={{ marginTop: "10px" }}
+                  className={`arrow ${toggle ? "activo" : ""}`}
+                />
+              </div>
+            </button>
+            <nav className={`nav ${toggle ? "current" : ""}`}>
+              <ul className="list-items">
+                <NavLink to={"/witcherry/waffles"}>
+                  <li className="items">
+                    <img src={waffles} alt="waffles" />
+                  </li>
+                </NavLink>
+                <NavLink to={"/witcherry/desayunos"}>
+                  <li className="items">
+                    <img src={desayuno} alt="desayuno" />
+                  </li>
+                </NavLink>
+                <NavLink to={"/witcherry/bebidas"}>
+                  <li className="items">
+                    <img src={bebidas} alt="bebidas" />
+                  </li>
+                </NavLink>
+                <NavLink to={"/witcherry/postres"}>
+                  <li className="items">
+                    <img src={postres} alt="postres" />
+                  </li>
+                </NavLink>
+                <NavLink to={"/witcherry/promos"}>
+                  <li className="items">
+                    <img src={promos} alt="promos" />
+                  </li>
+                </NavLink>
+              </ul>
+            </nav>
+          </div>
         </Slide>
       </header>
     </>
