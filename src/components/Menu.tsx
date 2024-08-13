@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";
 
 export const Menu = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState<boolean>(true);
   const refNav = useRef<HTMLElement>(null);
 
   // const handleClickActive = () => {
