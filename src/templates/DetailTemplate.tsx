@@ -27,7 +27,7 @@ export const DetailTemplate = () => {
   precioSplit = splicePrecio(precio);
 
   const handleClickArrow = () => {
-    navigate("/witcherry/waffles", { replace: true });
+    navigate("/menu/waffles", { replace: true });
   };
 
   return (

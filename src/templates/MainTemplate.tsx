@@ -37,7 +37,7 @@ export const MainTemplate = () => {
         </Container>
       </Box>
 
-      {pathname === "/witcherry/waffles" ? (
+      {pathname === "/menu/waffles" ? (
         <>
           <Fade>
             <div

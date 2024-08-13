@@ -25,7 +25,7 @@ export const ItemCarousel = ({
   const navigate = useNavigate();
   const handleClickDetail = (e: MouseEvent<HTMLElement>) => {
     e.preventDefault();
-    navigate(`/witcherry/platillo/${idPlatillo}`);
+    navigate(`/menu/platillo/${idPlatillo}`);
   };
 
   splitPrecio = splicePrecio(precio);

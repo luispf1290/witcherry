@@ -6,9 +6,9 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <Routes>
-      <Route path="/witcherry/*" element={<MainTemplate />} />
-      <Route path="/witcherry/platillo/:id" element={<DetailTemplate />} />
-      <Route path="/witcherry/home" element={<Home />} />
+      <Route path="/menu/*" element={<MainTemplate />} />
+      <Route path="/menu/platillo/:id" element={<DetailTemplate />} />
+      <Route path="/*" element={<Home />} />
     </Routes>
   );
 }

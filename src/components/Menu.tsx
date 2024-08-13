@@ -52,27 +52,27 @@ export const Menu = () => {
           </button>
           <nav className={`nav ${toggle ? "current" : ""}`}>
             <ul className="list-items">
-              <NavLink to={"/witcherry/waffles"}>
+              <NavLink to={"/menu/waffles"}>
                 <li className="items">
                   <img src={waffles} alt="waffles" />
                 </li>
               </NavLink>
-              <NavLink to={"/witcherry/desayunos"}>
+              <NavLink to={"/menu/desayunos"}>
                 <li className="items">
                   <img src={desayuno} alt="desayuno" />
                 </li>
               </NavLink>
-              <NavLink to={"/witcherry/bebidas"}>
+              <NavLink to={"/menu/bebidas"}>
                 <li className="items">
                   <img src={bebidas} alt="bebidas" />
                 </li>
               </NavLink>
-              <NavLink to={"/witcherry/postres"}>
+              <NavLink to={"/menu/postres"}>
                 <li className="items">
                   <img src={postres} alt="postres" />
                 </li>
               </NavLink>
-              <NavLink to={"/witcherry/promos"}>
+              <NavLink to={"/menu/promos"}>
                 <li className="items">
                   <img src={promos} alt="promos" />
                 </li>

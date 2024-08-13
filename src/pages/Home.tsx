@@ -6,7 +6,7 @@ export const Home = () => {
   const navigate = useNavigate();
   const handleNavigation = () => {
     setTimeout(() => {
-      navigate("/witcherry/waffles");
+      navigate("/menu/waffles");
     }, 1000);
   };
   return (
