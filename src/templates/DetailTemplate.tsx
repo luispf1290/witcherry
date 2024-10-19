@@ -67,24 +67,9 @@ export const DetailTemplate = () => {
               <img src={img} alt="platillo" />
             </div>
             <div className="container-ingredients">
-              <Title title={"Frutos prohibidos"} />
-
               <div>
                 <ul className="gray-p list-detail">
-                  {ingredientes.map((ingrediente, index) => (
-                    <li style={{ display: "flex" }} key={index}>
-                      <div>{ingrediente}</div>
-                      <Divider
-                        orientation="vertical"
-                        flexItem
-                        sx={{
-                          background: "#CACACA",
-                          marginRight: "5px",
-                          marginLeft: "5px",
-                        }}
-                      />
-                    </li>
-                  ))}
+                  {ingredientes}
                 </ul>
               </div>
               <div style={{ marginTop: "35px" }}>
