@@ -57,17 +57,17 @@ export const Menu = () => {
                   <img src={waffles} alt="waffles" />
                 </li>
               </NavLink>
-              <NavLink to={"/menu/desayunos"}>
+              {/* <NavLink to={"/menu/desayunos"}>
                 <li className="items">
                   <img src={desayuno} alt="desayuno" />
                 </li>
-              </NavLink>
+              </NavLink> */}
               <NavLink to={"/menu/bebidas"}>
                 <li className="items">
                   <img src={bebidas} alt="bebidas" />
                 </li>
               </NavLink>
-              <NavLink to={"/menu/postres"}>
+              {/* <NavLink to={"/menu/postres"}>
                 <li className="items">
                   <img src={postres} alt="postres" />
                 </li>
@@ -76,7 +76,7 @@ export const Menu = () => {
                 <li className="items">
                   <img src={promos} alt="promos" />
                 </li>
-              </NavLink>
+              </NavLink> */}
             </ul>
           </nav>
         </Slide>
