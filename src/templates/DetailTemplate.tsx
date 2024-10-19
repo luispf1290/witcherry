@@ -9,7 +9,6 @@ import {
 } from "@mui/material";
 import { useNavigate, useParams } from "react-router-dom";
 import { dishElements, propsDish } from "../data/dataDish";
-import { Title } from "../components";
 import arrow from "../assets/icons/arrow-witcherry.svg";
 import "./templates.css";
 import { splicePrecio } from "../utils/splicePrecio";
