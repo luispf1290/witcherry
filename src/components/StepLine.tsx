@@ -66,16 +66,13 @@ export const StepLine = () => {
                     <li>Frambuesa</li>
                     <li>Fresa</li>
                     <li>Zarzamora</li>
-                    <li>Mora Azul</li>
-                    <li>Cereza</li>
+                  
                   </ul>
                 </Grid>
                 <Grid item xs={6} sx={{ paddingLeft: "5px !important" }}>
                   <ul className="text-gray list-solid">
-                    <li>Mango</li>
-                    <li>Frambuesa con Granada</li>
-                    <li>Arando con Moras</li>
-                    <li>Manzana con canela</li>
+                  <li>Mora Azul</li>
+                  <li>Cereza</li>
                   </ul>
                 </Grid>
               </Grid>
@@ -162,8 +159,8 @@ export const StepLine = () => {
                 <ul className="text-gray list-solid">
                   <li>Crema Batida</li>
                   <li>Rompope</li>
-                  <li>Baileys</li>
-                  <li>Amaretto</li>
+                  {/* <li>Baileys</li> */}
+                  {/* <li>Amaretto</li> */}
                 </ul>
               </Grid>
             </Grid>
@@ -180,7 +177,7 @@ export const StepLine = () => {
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
           <Typography variant="h6" component="span">
-            Elige un polvo de estrellas:
+            Destello de estrellas de estrellas:
           </Typography>
           <Typography>
             <Grid container spacing={2}>
